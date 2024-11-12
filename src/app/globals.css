@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #181818;
+  --white: #ffffff;
+  --dark-satu: #1E1E1E;
+  --red-color: #C62E2E;
+  --blue-color: #2666CF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #181818;
+    --white: #ffffff;
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--white);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* COMPONENT navbar */
+.navbar{
+  background-color: var(--dark-satu);
+  border-bottom: 1px solid var(--white);
+}
+.navbar-brand{
+  color: var(--white);
+}
+.navbar .navbar-nav{
+  color: var(--white);
+}
+.navbar .nav-logo{
+  width: 63px;
+  height: 64px;
+}
+
+/* COMPONENT JUDUL */
+.judul-h2{
+  color: var(--white);
+  font-weight: 700;
+  font-size: 24px;
+}
+ .judul-text{
+  color: var(--red-color);
+  font-size: 20px;
+}
+
+/* COMPONENT BUTTON */
+.trigger-submit .btn{
+  background-color: var(--blue-color);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 10px;
+}
