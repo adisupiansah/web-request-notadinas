@@ -62,3 +62,19 @@ body {
   font-size: 16px;
   border-radius: 10px;
 }
+
+.btn{
+  background-color: var(--blue-color);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.btn:hover{
+  background-color: var(--background);
+  border-color: var(--blue-color);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 10px;
+}
